@@ -1,0 +1,3 @@
+/home/neil/thesis/evaluation/build/CMakeFiles/evaluation.dir
+/home/neil/thesis/evaluation/build/CMakeFiles/edit_cache.dir
+/home/neil/thesis/evaluation/build/CMakeFiles/rebuild_cache.dir

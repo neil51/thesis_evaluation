@@ -1,6 +1,9 @@
-cmake_minimum_required(VERSION 3.0)
-project (gnuplot_cpp_example)
-set (CMAKE_CXX_STANDARD 11)
+cmake_minimum_required(VERSION 3.10)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../include)
-add_executable(gnuplot_cpp_example example.cpp ../include/gnuplot.h)
+project(Evaluation)
+
+find_package(fmt CONFIG REQUIRED)
+
+add_executable(evaluation src/main.cpp)
+
+target_link_libraries(evaluation PRIVATE fmt::fmt)
