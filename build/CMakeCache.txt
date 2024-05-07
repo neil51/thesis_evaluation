@@ -207,7 +207,7 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
 //No help, variable specified on the command line.
-CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/home/neil/dev/vcpkg/scripts/buildsystems/vcpkg.cmake
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/scripts/buildsystems/vcpkg.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console

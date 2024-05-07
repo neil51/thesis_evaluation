@@ -1,6 +1,7 @@
 #include <cmath>
 // #include "/home/neil/dev/include/fmt/core.h"
 #include <iostream>
+#include <iterator>
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -9,6 +10,8 @@
 #include <numeric>
 #include <algorithm> // for std::min
 #include "/home/neil/dev/include/gnuplot.h"
+
+using namespace std;
 
 // Calculate the ratio
 double ratio(double L, double D, double t, double t0){
@@ -105,7 +108,7 @@ int plot(){
     gp.sendLine("print D, x0, f0, finf");
     gp.sendLine("print Dd, xd0, fd0, fdinf");
     return 0;
-};
+}
 
 // Function to read data from a file and return it as a 2D vector
 std::vector<std::vector<double>> readFile(const std::string& filename) {
@@ -141,16 +144,18 @@ std::vector<std::vector<double>> readFile(const std::string& filename) {
     file.close();
 
     return data; // Return the 2D vector
-};
+}
 
 int main(){
-    GnuplotPipe gp;
+    // GnuplotPipe gp;
+    FILE *gnuplotPipe = popen("gnuplot -persist", "w");
+    fprintf(gnuplotPipe,"\n");
     std::stringstream ss;
 
     int n = 5;      // number of terms for the mathematical series
     double L = 0.0004;  // thickness of the sample (in m)
-    double D = 1e-12;   // initial guess for D (buildup)
-    double Dd = 1e-12;  // initial guess for Dd (decay)
+    std::string D("1E-11");   // initial guess for D (buildup)
+    std::string Dd("1E-11");  // initial guess for Dd (decay)
     double x0 = 2000;   // initial guess for x0 (start of buildup curve)
     double xd0 = 9000;  // initial guess for xd0 (start of decay curve)
     double f0 = 0.005;  // initial guess for f0 (residual current, buildup curve)
@@ -159,7 +164,7 @@ int main(){
     double fdinf = 0.23;    // initial guess for fdinf (steady state current, decay curve)
     int start = 200; // start of graph displayed
     int end = 30000;    // end of graph displayed
-
+    
 // Define the filename
     std::string filename = "../20240229/20240229_01.ASC"; // Change this to your file's path/name
 
@@ -179,22 +184,46 @@ int main(){
     std::vector<double> time(rows); // Size is the same as the number of rows
     std::vector<double> current_density(rows);
 
-    for (int i = 200; i < rows; ++i) { // Only starting from row 200 to reduce initial noise
+    for (int i = 0; i < rows; ++i) { // Only starting from row 200 to reduce initial noise
         time[i] = data[i][0]; // Copy the first column of each row
     }
 
-    for (int i = 200; i < rows; ++i) { // Only starting from row 200 to reduce initial noise
+    for (int i = 0; i < rows; ++i) { // Only starting from row 200 to reduce initial noise
         current_density[i] = data[i][3]; // Copy the first column of each row
     }
 
-    std::vector<double> f = buildup(D, time, n, L, finf, f0, x0);
+    // std::vector<double> f(rows);
+    // f = buildup(D, time, n, L, finf, f0, x0);
 
-    // To check output
-    for (const auto& s : f) {
-        std::cout << f << " ";
-    }
-    std::cout << std::endl;
+    // // Save calculated values to my_file.txt
+    // std::ofstream outFile("my_file.txt");
+    // for (const auto &e : f) outFile << e << "\n";
+    // // To check output
+    // for (const auto& s : f) {
+    //     std::cout << s << " ";
+    // }
+    // std::cout << std::endl;
 
+    // fprintf(gnuplotPipe, "set fit maxiter 20 prescale\n");    // set max iterations
+    fprintf(gnuplotPipe, "set fit limit 1e-2 prescale\n");      // set error value
+
+    fprintf(gnuplotPipe, "L=%f\n D=%s\n x0=%f\n f0=%f\n finf=%f\n", L, D.c_str(), x0, f0, finf);    // Initial values for variables, and fixed terms
+
+    fprintf(gnuplotPipe, "f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x)))+exp(-9/(4*t(x)))+exp(-25/(4*t(x)))+exp(-49/(4*t(x)))+exp(-81/(4*t(x)))+exp(-121/(4*t(x))))*finf+f0 \n");
+    fprintf(gnuplotPipe, "t(x)=D*(x-x0)/L**2 \n");
+    fprintf(gnuplotPipe, "g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x)))+exp(-9/(4*td(x)))+exp(-25/(4*td(x)))+exp(-49/(4*td(x))))*fdinf+fd0 \n");
+    fprintf(gnuplotPipe, "td(x)=Dd*(x-xd0)/L**2 \n");
+    fprintf(gnuplotPipe, "Dd=%s\n xd0=%f\n fd0=%f\n fdinf=%f\n", Dd.c_str(), xd0, fd0, fdinf);    // Initial values for variables, and fixed terms
+
+
+
+    fprintf(gnuplotPipe, "fit [4000:10000] f(x) '%s' us ($1):($4) via D,x0,finf,f0\n ", filename.c_str());
+    fprintf(gnuplotPipe, "fit [12000:20000] g(x) '%s' us ($1):($4) via Dd,xd0,fdinf,fd0\n", filename.c_str());
+    fprintf(gnuplotPipe, "p [200:20000][0:0.25] '%s' us ($1):($4),f(x),g(x)\n", filename.c_str()); // Plot original curve
+
+    fflush(gnuplotPipe);
+    fprintf(gnuplotPipe,"exit \n");     // exit gnuplot
+    pclose(gnuplotPipe);
 
     // ss << "p [200:30000][0:0.25]'" << filename << "' us ($1):($4)";
     // gp.sendLine(ss.str());
