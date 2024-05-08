@@ -1,0 +1,2 @@
+filename,L,D,Dd,x0,xd0,f0,fd0,finf,fdinf,xaxis_start,xaxis_end,yaxis_start,yaxis_end,start_fit_buildup,end_fit_buildup,start_fit_decay,end_fit_decay
+../20240229/20240229_01.ASC,0.0004,6e-12,6e-12,33000,40000,0.02,0.05,0.245,0.245,28000,80000,0,0.30,35000,42000,58000,70000
