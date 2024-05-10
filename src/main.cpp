@@ -67,13 +67,15 @@ std::vector<FitParameters> parse_csv(const std::string& filepath) {
 }
 
 void perform_curve_fit(const FitParameters& params) {
-    FILE *gnuplotPipe = popen("gnuplot -persist", "w");
+    FILE *gnuplotPipe = popen("gnuplot -persist -geometry 1920x1080", "w");
     if (!gnuplotPipe) {
         std::cerr << "Error opening gnuplot" << std::endl;
         return;
     }
 
-    fprintf(gnuplotPipe, "set fit limit 1e-2 prescale\n");
+    fprintf(gnuplotPipe, "set fit limit 1e-3 prescale\n");
+    fprintf(gnuplotPipe, "set fit maxiter 5 \n");
+    fprintf(gnuplotPipe, "set terminal qt \n");
 
     fprintf(gnuplotPipe, "L=%s\n D=%s\n x0=%s\n f0=%s\n finf=%s\n",
             params.L.c_str(), params.D.c_str(), params.x0.c_str(), params.f0.c_str(), params.finf.c_str());
@@ -87,8 +89,12 @@ void perform_curve_fit(const FitParameters& params) {
     fprintf(gnuplotPipe, "td(x)=Dd*(x-xd0)/L**2 \n");
     fprintf(gnuplotPipe, "g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0 \n");
 
+    fprintf(gnuplotPipe, "print 'Fit buildup curve' \n");
+
     fprintf(gnuplotPipe, "fit [%s:%s] f(x) '%s' us ($1):($4) via D,x0,finf,f0\n",
             params.start_fit_buildup.c_str(), params.end_fit_buildup.c_str(), params.filename.c_str());
+
+    fprintf(gnuplotPipe, "print 'Fit decay curve' \n");
 
     fprintf(gnuplotPipe, "fit [%s:%s] g(x) '%s' us ($1):($4) via Dd,xd0,fdinf,fd0\n",
             params.start_fit_decay.c_str(), params.end_fit_decay.c_str(), params.filename.c_str());
