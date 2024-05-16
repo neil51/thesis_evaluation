@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <cstdio>
+#include <cstdlib>
 
 struct FitParameters {
     std::string filename;
@@ -66,8 +67,10 @@ std::vector<FitParameters> parse_csv(const std::string& filepath) {
     return parameter_sets;
 }
 
-void perform_curve_fit(const FitParameters& params) {
-    FILE *gnuplotPipe = popen("gnuplot -persist -geometry 1920x1080", "w");
+void perform_curve_fit(const FitParameters& params, std::ofstream& output_csv) {
+    // Create a temporary file for Gnuplot output
+    std::string tmp_filename = "gnuplot_output.tmp";
+    FILE* gnuplotPipe = popen(("gnuplot > " + tmp_filename).c_str(), "w");
     if (!gnuplotPipe) {
         std::cerr << "Error opening gnuplot" << std::endl;
         return;
@@ -75,7 +78,8 @@ void perform_curve_fit(const FitParameters& params) {
 
     fprintf(gnuplotPipe, "set fit limit 1e-3 prescale\n");
     fprintf(gnuplotPipe, "set fit maxiter 20 \n");
-    fprintf(gnuplotPipe, "set terminal qt \n");
+    fprintf(gnuplotPipe, "set terminal png size 1920,1080\n");
+    fprintf(gnuplotPipe, "set output 'plot_%s.png'\n", params.filename.c_str());
 
     fprintf(gnuplotPipe, "L=%s\n D=%s\n x0=%s\n f0=%s\n finf=%s\n",
             params.L.c_str(), params.D.c_str(), params.x0.c_str(), params.f0.c_str(), params.finf.c_str());
@@ -102,17 +106,45 @@ void perform_curve_fit(const FitParameters& params) {
     fprintf(gnuplotPipe, "plot [%s:%s][%s:%s] '%s' us ($1):($4), f(x), g(x)\n",
             params.xaxis_start.c_str(), params.xaxis_end.c_str(), params.yaxis_start.c_str(), params.yaxis_end.c_str(), params.filename.c_str());
 
+    fprintf(gnuplotPipe, "print D, Dd, f0, fd0, finf, fdinf\n");
+
     fflush(gnuplotPipe);
     fprintf(gnuplotPipe, "exit \n");
     pclose(gnuplotPipe);
+
+    // Read the gnuplot output
+    std::ifstream tmp_file(tmp_filename);
+    if (tmp_file.is_open()) {
+        std::string line;
+        while (std::getline(tmp_file, line)) {
+            if (line.find("D, Dd, f0, fd0, finf, fdinf") != std::string::npos) {
+                std::string values;
+                std::getline(tmp_file, values);
+                output_csv << params.filename << ',' << values << '\n';
+            }
+        }
+        tmp_file.close();
+        std::remove(tmp_filename.c_str());
+    } else {
+        std::cerr << "Error reading gnuplot output file." << std::endl;
+    }
 }
 
 int main() {
     std::vector<FitParameters> parameter_sets = parse_csv("20240412.csv");
+    std::ofstream output_csv("fit_results.csv");
 
-    for (const auto& params : parameter_sets) {
-        perform_curve_fit(params);
+    if (!output_csv.is_open()) {
+        std::cerr << "Error: Could not open output CSV file." << std::endl;
+        return 1;
     }
 
+    output_csv << "Filename,D,Dd,f0,fd0,finf,fdinf\n";
+
+    for (const auto& params : parameter_sets) {
+        perform_curve_fit(params, output_csv);
+    }
+
+    output_csv.close();
     return 0;
 }
