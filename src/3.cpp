@@ -1,3 +1,5 @@
+// Output to png works
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -5,8 +7,27 @@
 #include <string>
 #include <cstdio>
 #include <cstdlib>
+#include <sys/stat.h>
+
+// Function to create a directory if it doesn't exist
+bool create_directory(const std::string& path) {
+    #ifdef _WIN32
+    int result = _mkdir(path.c_str());
+    #else
+    mode_t mode = 0755;
+    int result = mkdir(path.c_str(), mode);
+    #endif
+    return (result == 0);
+}
+
+// Function to check if a directory exists
+bool directory_exists(const std::string& path) {
+    struct stat info;
+    return stat(path.c_str(), &info) == 0 && S_ISDIR(info.st_mode);
+}
 
 struct FitParameters {
+    std::string path;
     std::string filename;
     std::string L;
     std::string D;
@@ -42,6 +63,7 @@ std::vector<FitParameters> parse_csv(const std::string& filepath) {
     while (std::getline(file, line)) {
         std::stringstream ss(line);
         FitParameters params;
+        std::getline(ss, params.path, ',');
         std::getline(ss, params.filename, ',');
         std::getline(ss, params.L, ',');
         std::getline(ss, params.D, ',');
@@ -68,6 +90,19 @@ std::vector<FitParameters> parse_csv(const std::string& filepath) {
 }
 
 void perform_curve_fit(const FitParameters& params, std::ofstream& output_csv) {
+
+    // Create directory to store PNG files or output to it if it exists
+    std::string png_directory = params.filename;
+    if (!directory_exists(png_directory)) {
+        if (!create_directory(png_directory)) {
+            std::cerr << "Error creating directory: " << png_directory << std::endl;
+            return;
+        }
+    }
+
+     // Update filename to include directory path
+    std::string png_filename = png_directory + params.xaxis_start + "-" + params.xaxis_end + ".png";
+
     // Create a temporary file for Gnuplot output
     std::string tmp_filename = "gnuplot_output.tmp";
     FILE* gnuplotPipe = popen(("gnuplot > " + tmp_filename).c_str(), "w");
@@ -78,8 +113,8 @@ void perform_curve_fit(const FitParameters& params, std::ofstream& output_csv) {
 
     fprintf(gnuplotPipe, "set fit limit 1e-3 prescale\n");
     fprintf(gnuplotPipe, "set fit maxiter 20 \n");
-    fprintf(gnuplotPipe, "set terminal png size 1920,1080\n");
-    fprintf(gnuplotPipe, "set output 'plot_%s.png'\n", params.filename.c_str());
+    fprintf(gnuplotPipe, "set terminal pngcairo\n");
+    fprintf(gnuplotPipe, "set output '%s/%s_%s-%s.png' \n", png_directory.c_str(), params.filename.c_str(), params.xaxis_start.c_str(), params.xaxis_end.c_str());
 
     fprintf(gnuplotPipe, "L=%s\n D=%s\n x0=%s\n f0=%s\n finf=%s\n",
             params.L.c_str(), params.D.c_str(), params.x0.c_str(), params.f0.c_str(), params.finf.c_str());
@@ -95,16 +130,16 @@ void perform_curve_fit(const FitParameters& params, std::ofstream& output_csv) {
 
     fprintf(gnuplotPipe, "print 'Fit buildup curve' \n");
 
-    fprintf(gnuplotPipe, "fit [%s:%s] f(x) '%s' us ($1):($4) via D,f0,x0,finf\n",
-            params.start_fit_buildup.c_str(), params.end_fit_buildup.c_str(), params.filename.c_str());
+    fprintf(gnuplotPipe, "fit [%s:%s] f(x) '%s%s' us ($1):($4) via D,f0,x0,finf\n",
+            params.start_fit_buildup.c_str(), params.end_fit_buildup.c_str(), params.path.c_str(), params.filename.c_str());
 
     fprintf(gnuplotPipe, "print 'Fit decay curve' \n");
 
-    fprintf(gnuplotPipe, "fit [%s:%s] g(x) '%s' us ($1):($4) via Dd,xd0,fdinf,fd0\n",
-            params.start_fit_decay.c_str(), params.end_fit_decay.c_str(), params.filename.c_str());
+    fprintf(gnuplotPipe, "fit [%s:%s] g(x) '%s%s' us ($1):($4) via Dd,xd0,fdinf,fd0\n",
+            params.start_fit_decay.c_str(), params.end_fit_decay.c_str(), params.path.c_str(), params.filename.c_str());
 
-    fprintf(gnuplotPipe, "plot [%s:%s][%s:%s] '%s' us ($1):($4), f(x), g(x)\n",
-            params.xaxis_start.c_str(), params.xaxis_end.c_str(), params.yaxis_start.c_str(), params.yaxis_end.c_str(), params.filename.c_str());
+    fprintf(gnuplotPipe, "plot [%s:%s][%s:%s] '%s%s' us ($1):($4), f(x), g(x)\n",
+            params.xaxis_start.c_str(), params.xaxis_end.c_str(), params.yaxis_start.c_str(), params.yaxis_end.c_str(), params.path.c_str(), params.filename.c_str());
 
     fprintf(gnuplotPipe, "print D, Dd, f0, fd0, finf, fdinf\n");
 

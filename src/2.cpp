@@ -1,3 +1,5 @@
+// Tried to output to csv
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -68,7 +70,7 @@ std::vector<FitParameters> parse_csv(const std::string& filepath) {
 }
 
 void perform_curve_fit(const FitParameters& params, std::ofstream& output_file) {
-    FILE *gnuplotPipe = popen("gnuplot -persist -geometry 1920x1080", "w");
+    FILE *gnuplotPipe = popen("gnuplot -persist", "w");
     if (!gnuplotPipe) {
         std::cerr << "Error opening gnuplot" << std::endl;
         return;
@@ -100,8 +102,8 @@ void perform_curve_fit(const FitParameters& params, std::ofstream& output_file) 
     fprintf(gnuplotPipe, "fit [%s:%s] f(x) '%s' us ($1):($4) via D,f0,x0,finf\n",
             params.start_fit_buildup.c_str(), params.end_fit_buildup.c_str(), params.filename.c_str());
     
-    // std::string D_fit = fprintf(gnuplotPipe, "print D \n");
-    // const char* = fprintf(gnuplotPipe, "print D_err \n");
+    // D_fit = fprintf(gnuplotPipe, "print D \n");
+    // fprintf(gnuplotPipe, "print D_err \n");
 
     fprintf(gnuplotPipe, "print 'Fit decay curve' \n");
 

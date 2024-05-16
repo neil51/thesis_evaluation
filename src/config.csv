@@ -1,2 +1,2 @@
-filename,L,D,Dd,x0,xd0,f0,fd0,finf,fdinf,xaxis_start,xaxis_end,yaxis_start,yaxis_end,start_fit_buildup,end_fit_buildup,start_fit_decay,end_fit_decay
-../data/20240412_A_01.ASC,0.0004,6.5e-12,7e-12,60000,63000,0.04,0.06,0.55,0.548,60000,80000,0,0.8,61000,65000,67000,79000
+path,filename,L,D,Dd,x0,xd0,f0,fd0,finf,fdinf,xaxis_start,xaxis_end,yaxis_start,yaxis_end,start_fit_buildup,end_fit_buildup,start_fit_decay,end_fit_decay
+../data/,20240412_A_01.ASC,0.0004,6.5e-12,7e-12,60000,63000,0.04,0.06,0.55,0.548,60000,80000,0,0.8,61000,65000,67000,79000
