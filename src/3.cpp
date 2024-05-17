@@ -29,6 +29,7 @@ bool directory_exists(const std::string& path) {
 struct FitParameters {
     std::string path;
     std::string filename;
+    std::string suffix;
     std::string L;
     std::string D;
     std::string Dd;
@@ -65,6 +66,7 @@ std::vector<FitParameters> parse_csv(const std::string& filepath) {
         FitParameters params;
         std::getline(ss, params.path, ',');
         std::getline(ss, params.filename, ',');
+        std::getline(ss, params.suffix, ',');
         std::getline(ss, params.L, ',');
         std::getline(ss, params.D, ',');
         std::getline(ss, params.Dd, ',');
@@ -89,7 +91,7 @@ std::vector<FitParameters> parse_csv(const std::string& filepath) {
     return parameter_sets;
 }
 
-void perform_curve_fit(const FitParameters& params, std::ofstream& output_csv) {
+void perform_curve_fit(const FitParameters& params) {
 
     // Create directory to store PNG files or output to it if it exists
     std::string png_directory = params.filename;
@@ -114,6 +116,7 @@ void perform_curve_fit(const FitParameters& params, std::ofstream& output_csv) {
     fprintf(gnuplotPipe, "set fit limit 1e-3 prescale\n");
     fprintf(gnuplotPipe, "set fit maxiter 20 \n");
     fprintf(gnuplotPipe, "set terminal pngcairo\n");
+    fprintf(gnuplotPipe, "set print '%s/%s_%s-%s_fit.csv' \n", png_directory.c_str(), params.filename.c_str(), params.xaxis_start.c_str(), params.xaxis_end.c_str());
     fprintf(gnuplotPipe, "set output '%s/%s_%s-%s.png' \n", png_directory.c_str(), params.filename.c_str(), params.xaxis_start.c_str(), params.xaxis_end.c_str());
 
     fprintf(gnuplotPipe, "L=%s\n D=%s\n x0=%s\n f0=%s\n finf=%s\n",
@@ -128,58 +131,59 @@ void perform_curve_fit(const FitParameters& params, std::ofstream& output_csv) {
     fprintf(gnuplotPipe, "td(x)=Dd*(x-xd0)/L**2 \n");
     fprintf(gnuplotPipe, "g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0 \n");
 
-    fprintf(gnuplotPipe, "print 'Fit buildup curve' \n");
+    // fprintf(gnuplotPipe, "print 'Fit buildup curve' \n");
 
-    fprintf(gnuplotPipe, "fit [%s:%s] f(x) '%s%s' us ($1):($4) via D,f0,x0,finf\n",
-            params.start_fit_buildup.c_str(), params.end_fit_buildup.c_str(), params.path.c_str(), params.filename.c_str());
+    fprintf(gnuplotPipe, "fit [%s:%s] f(x) '%s%s%s' us ($1):($4) via D,f0,x0,finf\n",
+            params.start_fit_buildup.c_str(), params.end_fit_buildup.c_str(), params.path.c_str(), params.filename.c_str(), params.suffix.c_str());
 
-    fprintf(gnuplotPipe, "print 'Fit decay curve' \n");
+    // fprintf(gnuplotPipe, "print 'Fit decay curve' \n");
 
-    fprintf(gnuplotPipe, "fit [%s:%s] g(x) '%s%s' us ($1):($4) via Dd,xd0,fdinf,fd0\n",
-            params.start_fit_decay.c_str(), params.end_fit_decay.c_str(), params.path.c_str(), params.filename.c_str());
+    fprintf(gnuplotPipe, "fit [%s:%s] g(x) '%s%s%s' us ($1):($4) via Dd,xd0,fdinf,fd0\n",
+            params.start_fit_decay.c_str(), params.end_fit_decay.c_str(), params.path.c_str(), params.filename.c_str(), params.suffix.c_str());
 
-    fprintf(gnuplotPipe, "plot [%s:%s][%s:%s] '%s%s' us ($1):($4), f(x), g(x)\n",
-            params.xaxis_start.c_str(), params.xaxis_end.c_str(), params.yaxis_start.c_str(), params.yaxis_end.c_str(), params.path.c_str(), params.filename.c_str());
+    fprintf(gnuplotPipe, "plot [%s:%s][%s:%s] '%s%s%s' us ($1):($4), f(x), g(x)\n",
+            params.xaxis_start.c_str(), params.xaxis_end.c_str(), params.yaxis_start.c_str(), params.yaxis_end.c_str(), params.path.c_str(), params.filename.c_str(), params.suffix.c_str());
 
-    fprintf(gnuplotPipe, "print D, Dd, f0, fd0, finf, fdinf\n");
+    fprintf(gnuplotPipe, "print 'D,D_err,Dd,Dd_err,f0,fd0,finf,fdinf'\n");
+
+    fprintf(gnuplotPipe, "print D, ',', D_err, ',', Dd, ',', Dd_err, ',', f0, ',', fd0, ',', finf, ',', fdinf\n");
 
     fflush(gnuplotPipe);
     fprintf(gnuplotPipe, "exit \n");
     pclose(gnuplotPipe);
 
     // Read the gnuplot output
-    std::ifstream tmp_file(tmp_filename);
-    if (tmp_file.is_open()) {
-        std::string line;
-        while (std::getline(tmp_file, line)) {
-            if (line.find("D, Dd, f0, fd0, finf, fdinf") != std::string::npos) {
-                std::string values;
-                std::getline(tmp_file, values);
-                output_csv << params.filename << ',' << values << '\n';
-            }
-        }
-        tmp_file.close();
-        std::remove(tmp_filename.c_str());
-    } else {
-        std::cerr << "Error reading gnuplot output file." << std::endl;
-    }
+    // std::ifstream tmp_file(tmp_filename);
+    // if (tmp_file.is_open()) {
+    //     std::string line;
+    //     while (std::getline(tmp_file, line)) {
+    //         if (line.find("D, Dd, f0, fd0, finf, fdinf") != std::string::npos) {
+    //             std::string values;
+    //             std::getline(tmp_file, values);
+    //             output_csv << params.filename << ',' << values << '\n';
+    //         }
+    //     }
+    //     tmp_file.close();
+    //     std::remove(tmp_filename.c_str());
+    // } else {
+    //     std::cerr << "Error reading gnuplot output file." << std::endl;
+    // }
 }
 
 int main() {
     std::vector<FitParameters> parameter_sets = parse_csv("20240412.csv");
-    std::ofstream output_csv("fit_results.csv");
+    // std::ofstream output_csv("fit_results.csv");
 
-    if (!output_csv.is_open()) {
-        std::cerr << "Error: Could not open output CSV file." << std::endl;
-        return 1;
-    }
+    // if (!output_csv.is_open()) {
+    //     std::cerr << "Error: Could not open output CSV file." << std::endl;
+    //     return 1;
+    // }
 
-    output_csv << "Filename,D,Dd,f0,fd0,finf,fdinf\n";
+    // output_csv << "Filename,D,Dd,f0,fd0,finf,fdinf\n";
 
     for (const auto& params : parameter_sets) {
-        perform_curve_fit(params, output_csv);
+        perform_curve_fit(params);
     }
 
-    output_csv.close();
     return 0;
 }

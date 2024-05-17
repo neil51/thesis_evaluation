@@ -84,6 +84,7 @@ void perform_curve_fit(const FitParameters& params, std::ofstream& output_file) 
     std::string output_png = params.filename + ".png";
     fprintf(gnuplotPipe, "set terminal pngcairo size 1920,1080\n");
     fprintf(gnuplotPipe, "set output '%s'\n", output_png.c_str());
+    fprintf(gnuplotPipe, "set print '%s.log' \n", params.filename.c_str());
 
     fprintf(gnuplotPipe, "L=%s\n D=%s\n x0=%s\n f0=%s\n finf=%s\n",
             params.L.c_str(), params.D.c_str(), params.x0.c_str(), params.f0.c_str(), params.finf.c_str());
@@ -102,8 +103,7 @@ void perform_curve_fit(const FitParameters& params, std::ofstream& output_file) 
     fprintf(gnuplotPipe, "fit [%s:%s] f(x) '%s' us ($1):($4) via D,f0,x0,finf\n",
             params.start_fit_buildup.c_str(), params.end_fit_buildup.c_str(), params.filename.c_str());
     
-    // D_fit = fprintf(gnuplotPipe, "print D \n");
-    // fprintf(gnuplotPipe, "print D_err \n");
+    fprintf(gnuplotPipe, "print D, f0, x0, finf \n");
 
     fprintf(gnuplotPipe, "print 'Fit decay curve' \n");
 
