@@ -144,9 +144,11 @@ void perform_curve_fit(const FitParameters& params) {
     fprintf(gnuplotPipe, "plot [%s:%s][%s:%s] '%s%s%s' us ($1):($4), f(x), g(x)\n",
             params.xaxis_start.c_str(), params.xaxis_end.c_str(), params.yaxis_start.c_str(), params.yaxis_end.c_str(), params.path.c_str(), params.filename.c_str(), params.suffix.c_str());
 
-    fprintf(gnuplotPipe, "print 'D,D_err,Dd,Dd_err,f0,fd0,finf,fdinf'\n");
+    fprintf(gnuplotPipe, "print 'D,D_err,Dd,Dd_err'\n");
 
-    fprintf(gnuplotPipe, "print D, ',', D_err, ',', Dd, ',', Dd_err, ',', f0, ',', fd0, ',', finf, ',', fdinf\n");
+    fprintf(gnuplotPipe, "print D, ',', D_err, ',', Dd, ',', Dd_err\n");
+
+
 
     fflush(gnuplotPipe);
     fprintf(gnuplotPipe, "exit \n");
