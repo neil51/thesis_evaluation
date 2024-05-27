@@ -1,4 +1,4 @@
-// can print ymax, ymin, xmax, xmin
+// can calculate x_63, x_10
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -42,7 +42,10 @@ std::vector<Data> readData(const std::string& filename) {
     while (std::getline(file, line)) {
         std::istringstream iss(line);
         Data d;
-        if (!(iss >> d.t >> d.V >> d.I >> d.S)) { break; }
+        if (!(iss >> d.t >> d.V >> d.I >> d.S)) {
+            std::cerr << "Error parsing line: " << line << std::endl;
+            continue; // Skip lines that cannot be parsed
+        }
         data.push_back(d);
     }
     return data;
@@ -139,7 +142,7 @@ void perform_curve_fit(const FitParameters& params) {
     
     // fprintf(gnuplotPipe, "print y_coord_63, y_coord_10\n");
 
-    fprintf(gnuplotPipe, "print y_coord_63, ',', y_coord_10, ',', 'x_pos_max_y', ',', 'x_pos_min_y' \n");
+    fprintf(gnuplotPipe, "print y_coord_63, ',', y_coord_10, ',', x_pos_max_y, ',', x_pos_min_y \n");
 
     // fprintf(gnuplotPipe, "set arrow from y_63,0 to y_63,1 nohead lc rgb \'red\' \n");
     fprintf(gnuplotPipe, "replot \n");
@@ -158,48 +161,57 @@ void perform_curve_fit(const FitParameters& params) {
         std::cerr << "Error opening file: " << tmp_filename << std::endl;
     }
 
+    double y_63, y_10, x_max_fit, x_min_fit;
+
     // Read the Gnuplot output
     std::string line;
     if (std::getline(infile, line)) {
         std::istringstream iss(line);
-        std::string y_63_str, y_10_str, x_max_fit_str, x_min_fit_str;
+        char comma;
+        if (!(iss >> y_63 >> comma >> y_10 >> comma >> x_max_fit >> comma >> x_min_fit)) {
+            std::cerr << "Error parsing Gnuplot output: " << line << std::endl;
+            return;
+        }
 
-        if (std::getline(iss, y_63_str, ',') && std::getline(iss, y_10_str, ',') && std::getline(iss, x_max_fit_str, ',') && std::getline(iss, x_min_fit_str, ',')) {
-            std::vector<Data> data = readData("astm.csv");
-            double y_63 = std::stod(y_63_str);
-            double y_10 = std::stod(y_10_str);
-            double x_max_fit = std::stod(x_max_fit_str);
-            double x_min_fit = std::stod(x_min_fit_str);
+        std::cout << "y_63 = " << y_63 << ", y_10 = " << y_10 << ", x_max_fit = " << x_max_fit << ", x_min_fit = " << x_min_fit << std::endl;
 
-            // Set the target value, tolerance, and limits
+        std::vector<Data> data = readData(params.path + params.filename + params.suffix);
 
-            double targetS = y_63;
-            double tolerance = 0.0005;
-            double lowerLimit = x_max_fit;
-            double upperLimit = x_min_fit;
+        // Set the target value, tolerance, and limits
 
-            // Find the value
-            double result = findValue(data, targetS, tolerance, lowerLimit, upperLimit);
-            // Print the result
-            if (result != -1) {
-                std::cout << "The value in column 1 for the given column 4 value is: " << result << std::endl;
-            } else {
-                std::cout << "No value found within the specified tolerance and limits." << std::endl;
-            }
-            
+        double targetS_10 = y_10;
+        double targetS_63 = y_63;
+        double tolerance = 0.0005;
+        double lowerLimit = x_min_fit;
+        double upperLimit = x_max_fit;
+
+        // Find the value
+        double x_10 = findValue(data, targetS_10, tolerance, lowerLimit, upperLimit);
+        // Print the result
+        // if (x_10 != -1) {
+        //     std::cout << "x_10 is: " << x_10 << std::endl;
+        // } else {
+        //     std::cout << "No value found within the specified tolerance and limits." << std::endl;
+        // }
+        
+
+        // Find the value
+        double x_63 = findValue(data, targetS_63, tolerance, lowerLimit, upperLimit);
+        // Print the result
+        // if (x_63 != -1) {
+        //     std::cout << "x_63 is: " << x_63 << std::endl;
+        // } else {
+        //     std::cout << "No value found within the specified tolerance and limits." << std::endl;
+        // }
+        
+
         // std::cout << "y_63 = " << y_63 << ", y_10 = " << y_10 << std::endl;
         } else {
-            std::cerr << "Error parsing line: " << line << std::endl;
+            std::cerr << "Error reading from file" << std::endl;
         }
-    } else {
-        std::cerr << "Error reading from file" << std::endl;
-    }
-
-
-
 
     infile.close();
-    std::remove(tmp_filename.c_str());
+    // std::remove(tmp_filename.c_str());
 
 }
 
