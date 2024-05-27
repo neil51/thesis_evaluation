@@ -195,24 +195,14 @@ void perform_curve_fit(const FitParameters& params) {
         // Find the value
         double x_10 = findValue(data, targetS_10, tolerance, lowerLimit, upperLimit);
         // Print the result
-        // if (x_10 != -1) {
         std::cout << "x_10 is: " << x_10 << std::endl;
-        // } else {
-        //     std::cout << "No value found within the specified tolerance and limits." << std::endl;
-        // }
         
 
         // Find the value
         double x_63 = findValue(data, targetS_63, tolerance, lowerLimit, upperLimit);
         // Print the result
-        // if (x_63 != -1) {
         std::cout << "x_63 is: " << x_63 << std::endl;
-        // } else {
-        //     std::cout << "No value found within the specified tolerance and limits." << std::endl;
-        // }
         
-
-        // std::cout << "y_63 = " << y_63 << ", y_10 = " << y_10 << std::endl;
         } else {
             std::cerr << "Error reading from file" << std::endl;
         }

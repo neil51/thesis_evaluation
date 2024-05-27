@@ -181,47 +181,49 @@ void perform_curve_fit(const FitParameters& params) {
         double tolerance = 0.0005;
         double lowerLimit;
         double upperLimit;
+        double t_63;
+        double t_10;
+        double L = 0.0004; // 
+        double M_63 = 6.0;  //
+        double M_10 = 15.3; // 
+        double x_63;
+        double x_10;
+
 
         if (x_max_fit > x_min_fit){ // buildup
             lowerLimit = x_min_fit;
             upperLimit = x_max_fit;
+            double x_10 = findValue(data, targetS_10, tolerance, lowerLimit, upperLimit);
+            double x_63 = findValue(data, targetS_63, tolerance, lowerLimit, upperLimit);
+            t_63 = x_63 - lowerLimit;
+            t_10 = x_10 - lowerLimit;
         } else { // decay
             lowerLimit = x_max_fit;
             upperLimit = x_min_fit;
+            double x_10 = findValue(data, targetS_10, tolerance, lowerLimit, upperLimit);
+            double x_63 = findValue(data, targetS_63, tolerance, lowerLimit, upperLimit);
+            t_63 = upperLimit - x_63;
+            t_10 = upperLimit - x_10;
         }
 
-        std::cout << "y_63 = " << y_63 << ", y_10 = " << y_10 << ", x_max_fit = " << x_max_fit << ", x_min_fit = " << x_min_fit << std::endl;
+        // Dapp_63
+        double Dapp_63 = (std::pow(L, 2)) / (M_63 * t_63);
 
-        // Find the value
-        double x_10 = findValue(data, targetS_10, tolerance, lowerLimit, upperLimit);
-        // Print the result
-        // if (x_10 != -1) {
-        std::cout << "x_10 is: " << x_10 << std::endl;
-        // } else {
-        //     std::cout << "No value found within the specified tolerance and limits." << std::endl;
-        // }
-        
+        // Dapp_63
+        double Dapp_10 = (std::pow(L, 2)) / (M_10 * t_10);
 
-        // Find the value
-        double x_63 = findValue(data, targetS_63, tolerance, lowerLimit, upperLimit);
-        // Print the result
-        // if (x_63 != -1) {
-        std::cout << "x_63 is: " << x_63 << std::endl;
-        // } else {
-        //     std::cout << "No value found within the specified tolerance and limits." << std::endl;
-        // }
-        
-
-        // std::cout << "y_63 = " << y_63 << ", y_10 = " << y_10 << std::endl;
-        } else {
-            std::cerr << "Error reading from file" << std::endl;
-        }
-
+        // Output the result
+        std::cout << "t_63 = " << t_63 << std::endl;
+        std::cout << "t_10 = " << t_10 << std::endl;
+        std::cout << "D_63 = " << Dapp_63 << std::endl;
+        std::cout << "D_10 = " << Dapp_10 << std::endl;
 
 
 
     infile.close();
     // std::remove(tmp_filename.c_str());
+    
+    }
 
 }
 
