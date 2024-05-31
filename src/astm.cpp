@@ -111,8 +111,7 @@ void perform_curve_fit(const FitParameters& params) {
     fprintf(gnuplotPipe, "\n");
     fprintf(gnuplotPipe, "set terminal qt\n");
     fprintf(gnuplotPipe, "set print '%s'\n", tmp_filename.c_str());
-    fprintf(gnuplotPipe, "plot [%s:%s][%s:%s] '%s%s%s' us ($1):($4)\n",
-            params.x_min.c_str(), params.x_max.c_str(), params.y_min.c_str(), params.y_max.c_str(), params.path.c_str(), params.filename.c_str(), params.suffix.c_str());
+    fprintf(gnuplotPipe, "plot [%s:%s][%s:%s] '%s%s%s' us ($1):($4)\n",params.x_min.c_str(), params.x_max.c_str(), params.y_min.c_str(), params.y_max.c_str(), params.path.c_str(), params.filename.c_str(), params.suffix.c_str());
 
     fprintf(gnuplotPipe, "stats [%s:%s][%s:%s] '%s%s%s' us ($1):($4) nooutput\n",
             params.x_min.c_str(), params.x_max.c_str(), params.y_min.c_str(), params.y_max.c_str(), params.path.c_str(), params.filename.c_str(), params.suffix.c_str());
@@ -132,28 +131,17 @@ void perform_curve_fit(const FitParameters& params) {
     fprintf(gnuplotPipe, "y_coord_63 = y_63 + y_min\n");    // y coordinate of y_63
     fprintf(gnuplotPipe, "y_coord_10 = y_10 + y_min\n");    // y coordinate of y_10
 
-    // fprintf(gnuplotPipe, "x_coord_63 = x_63 + x_pos_min_y\n");    // x coordinate of x_63
-    // fprintf(gnuplotPipe, "x_coord_10 = x_10 + x_pos_min_y\n");    // x coordinate of x_10
-
-    // fprintf(gnuplotPipe, "set object circle at x_10,y_coord_10 \n");
-    // fprintf(gnuplotPipe, "set object circle at x_63,y_coord_63 \n");
-
     // fprintf(gnuplotPipe, "print 'y_max = ', y_max\n print 'y_min = ', y_min\n print 'x(y_max) = ', x_pos_max_y\n print 'x(y_min) = ', x_pos_min_y\n print 'x_63,y_63 = ', x_63, y_63\n print 'x_10,y_10 = ', x_10,y_10\n");
     
     // fprintf(gnuplotPipe, "print y_coord_63, y_coord_10\n");
 
     fprintf(gnuplotPipe, "print y_coord_63, ',', y_coord_10, ',', x_pos_max_y, ',', x_pos_min_y \n");
 
-    // fprintf(gnuplotPipe, "set arrow from y_63,0 to y_63,1 nohead lc rgb \'red\' \n");
-    fprintf(gnuplotPipe, "replot \n");
+    // fprintf(gnuplotPipe, "replot \n");
 
     fprintf(gnuplotPipe, "\n");
 
     // fprintf(gnuplotPipe, "print y_63\n");
-
-    fflush(gnuplotPipe);
-    fprintf(gnuplotPipe, "exit \n");
-    pclose(gnuplotPipe);
 
     // Open the file
     std::ifstream infile(tmp_filename);
@@ -184,7 +172,7 @@ void perform_curve_fit(const FitParameters& params) {
         double t_63;
         double t_10;
         double L = 0.0004; // 
-        double M_63 = 6.0;  //
+        double M_63 = 6.0;  // 
         double M_10 = 15.3; // 
         double x_63;
         double x_10;
@@ -207,28 +195,57 @@ void perform_curve_fit(const FitParameters& params) {
         }
 
         // Dapp_63
-        double Dapp_63 = (std::pow(L, 2)) / (M_63 * t_63);
+        double D_63 = (std::pow(L, 2)) / (M_63 * t_63);
 
         // Dapp_63
-        double Dapp_10 = (std::pow(L, 2)) / (M_10 * t_10);
+        double D_10 = (std::pow(L, 2)) / (M_10 * t_10);
+
+        double D_avg = (D_63 + D_10) / 2;
 
         // Output the result
-        std::cout << "t_63 = " << t_63 << std::endl;
-        std::cout << "t_10 = " << t_10 << std::endl;
-        std::cout << "D_63 = " << Dapp_63 << std::endl;
-        std::cout << "D_10 = " << Dapp_10 << std::endl;
 
+        std::cout << "xmin = " << lowerLimit << std::endl;
+        std::cout << "xmax = " << upperLimit << std::endl;
+        std::cout << "D_avg = " << D_avg << std::endl;
+        // std::cout << "D_63 = " << D_63 << std::endl;
+        // std::cout << "D_10 = " << D_10 << std::endl;
 
+        // Append ".csv" extension to the filename
+        std::string outputFilename = params.filename + "_astm.csv";
 
-    infile.close();
+    // Open the CSV file in append mode
+        std::ofstream file(outputFilename, std::ios::app);
+    
+    // Check if the file is open
+        if (!file.is_open()) {
+            std::cerr << "Failed to open file: " << outputFilename << std::endl;
+        }
+
+    // Write the values to the CSV file
+        // file << "xmin,xmax,D_avg\n"; // Write header if needed, remove if not
+        file << lowerLimit << "," << upperLimit << "," << D_avg << "\n";
+
+    // Close the file
+        file.close();
+
+        // std::cout << "Values written to " << outputFilename << std::endl;
+        infile.close();
+
+    // fprintf(gnuplotPipe, "set object circle at %f,y_coord_63 \n", x_63);
+    // fprintf(gnuplotPipe, "set object circle at %f,y_coord_10 \n", x_10);
     // std::remove(tmp_filename.c_str());
+
+    // fprintf(gnuplotPipe, "replot \n");
+    fflush(gnuplotPipe);
+    fprintf(gnuplotPipe, "exit \n");
+    pclose(gnuplotPipe);
     
     }
 
 }
 
 int main() {
-    std::vector<FitParameters> parameter_sets = parse_csv("astm.csv");
+    std::vector<FitParameters> parameter_sets = parse_csv("20240412_astm_input.csv");
  
      for (const auto& params : parameter_sets) {
         perform_curve_fit(params);

@@ -173,7 +173,7 @@ void perform_curve_fit(const FitParameters& params) {
 }
 
 int main() {
-    std::vector<FitParameters> parameter_sets = parse_csv("20240412.csv");
+    std::vector<FitParameters> parameter_sets = parse_csv("20240412_fit_input.csv");
     // std::ofstream output_csv("fit_results.csv");
 
     // if (!output_csv.is_open()) {
