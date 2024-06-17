@@ -1,0 +1,3 @@
+path,filename,suffix,L,D,Dd,x0,xd0,f0,fd0,finf,fdinf,xaxis_start,xaxis_end,yaxis_start,yaxis_end,start_fit_buildup,end_fit_buildup,start_fit_decay,end_fit_decay
+../data/,20240528,_A_02.ASC,0.0004,6e-12,2e-12,105000,132800,0.02,0.02,0.1,0.1,100000,169000,0,0.12,106000,132000,133500,150000
+../data/,20240528,_A_02.ASC,0.0004,2e-12,2e-12,160000,194000,0.02,0.02,0.1,0.1,162000,240000,0,0.14,170500,192000,196000,222000

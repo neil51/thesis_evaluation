@@ -94,7 +94,7 @@ std::vector<FitParameters> parse_csv(const std::string& filepath) {
 void perform_curve_fit(const FitParameters& params) {
 
     // Create directory to store PNG files or output to it if it exists
-    std::string png_directory = params.filename;
+    std::string png_directory = "fit_results/" + params.filename;
     if (!directory_exists(png_directory)) {
         if (!create_directory(png_directory)) {
             std::cerr << "Error creating directory: " << png_directory << std::endl;
@@ -144,9 +144,13 @@ void perform_curve_fit(const FitParameters& params) {
     fprintf(gnuplotPipe, "plot [%s:%s][%s:%s] '%s%s%s' us ($1):($4), f(x), g(x)\n",
             params.xaxis_start.c_str(), params.xaxis_end.c_str(), params.yaxis_start.c_str(), params.yaxis_end.c_str(), params.path.c_str(), params.filename.c_str(), params.suffix.c_str());
 
-    fprintf(gnuplotPipe, "print 'D,D_err,Dd,Dd_err'\n");
+    // fprintf(gnuplotPipe, "print 'D,D_err,Dd,Dd_err'\n");
 
-    fprintf(gnuplotPipe, "print D, ',', D_err, ',', Dd, ',', Dd_err\n");
+    // fprintf(gnuplotPipe, "print D, ',', D_err, ',', Dd, ',', Dd_err\n");
+
+    fprintf(gnuplotPipe, "print 'D,Dd'\n");
+
+    fprintf(gnuplotPipe, "print D, ',', Dd\n");
 
 
 
@@ -173,7 +177,7 @@ void perform_curve_fit(const FitParameters& params) {
 }
 
 int main() {
-    std::vector<FitParameters> parameter_sets = parse_csv("20240412_fit_input.csv");
+    std::vector<FitParameters> parameter_sets = parse_csv("fit_input/20240528_fit_input.csv");
     // std::ofstream output_csv("fit_results.csv");
 
     // if (!output_csv.is_open()) {

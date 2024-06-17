@@ -9,6 +9,7 @@
 #include <cstdlib>
 #include <sys/stat.h>
 
+
 // Function to create a directory if it doesn't exist
 bool create_directory(const std::string& path) {
     #ifdef _WIN32
@@ -211,15 +212,15 @@ void perform_curve_fit(const FitParameters& params) {
         // std::cout << "D_10 = " << D_10 << std::endl;
 
         // Append ".csv" extension to the filename
-        std::string outputFilename = params.filename + "_astm.csv";
+        std::string outputFilename = "astm_output/" + params.filename + "_astm.csv";
 
     // Open the CSV file in append mode
         std::ofstream file(outputFilename, std::ios::app);
     
-    // Check if the file is open
-        if (!file.is_open()) {
-            std::cerr << "Failed to open file: " << outputFilename << std::endl;
-        }
+    // // Check if the file is open
+    //     if (!file.is_open()) {
+    //         std::cerr << "Failed to open file: " << outputFilename << std::endl;
+    //     }
 
     // Write the values to the CSV file
         // file << "xmin,xmax,D_avg\n"; // Write header if needed, remove if not
@@ -233,7 +234,7 @@ void perform_curve_fit(const FitParameters& params) {
 
     // fprintf(gnuplotPipe, "set object circle at %f,y_coord_63 \n", x_63);
     // fprintf(gnuplotPipe, "set object circle at %f,y_coord_10 \n", x_10);
-    // std::remove(tmp_filename.c_str());
+    std::remove(tmp_filename.c_str());
 
     // fprintf(gnuplotPipe, "replot \n");
     fflush(gnuplotPipe);
@@ -245,7 +246,7 @@ void perform_curve_fit(const FitParameters& params) {
 }
 
 int main() {
-    std::vector<FitParameters> parameter_sets = parse_csv("20240412_astm_input.csv");
+    std::vector<FitParameters> parameter_sets = parse_csv("astm_input/20240521_astm_input.csv");
  
      for (const auto& params : parameter_sets) {
         perform_curve_fit(params);

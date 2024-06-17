@@ -1006,3 +1006,5277 @@ Dd              1.000
 xd0             0.856  1.000 
 fdinf          -0.834 -0.999  1.000 
 fd0             0.840  0.596 -0.574  1.000 
+
+
+*******************************************************************************
+Fri May 31 14:13:57 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4200.00 : 31000.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 5.7116189034e+01   0.00e+00  3.44e-02    6.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 3.97901e-12    
+z               = 0.016093       
+
+Current set of parameters
+=========================
+D               = 3.97901e-12    
+f0              = 0.00957066     
+x0              = 4241.22        
+finf            = 0.0431537      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:14:01 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:15:50 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4200.00 : 31000.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 5.7116189034e+01   0.00e+00  3.44e-02    6.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 3.97901e-12    
+z               = 0.016093       
+
+Current set of parameters
+=========================
+D               = 3.97901e-12    
+f0              = 0.00957066     
+x0              = 4241.22        
+finf            = 0.0431537      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:15:54 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:17:37 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4200.00 : 31000.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 5.7116189034e+01   0.00e+00  3.44e-02    6.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 3.97901e-12    
+z               = 0.016093       
+
+Current set of parameters
+=========================
+D               = 3.97901e-12    
+f0              = 0.00957066     
+x0              = 4241.22        
+finf            = 0.0431537      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:17:41 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:18:14 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4200.00 : 31000.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 5.7116189034e+01   0.00e+00  3.44e-02    6.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 3.97901e-12    
+z               = 0.016093       
+
+Current set of parameters
+=========================
+D               = 3.97901e-12    
+f0              = 0.00957066     
+x0              = 4241.22        
+finf            = 0.0431537      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:18:18 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:19:17 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4500.00 : 31000.0]
+        #datapoints = 53001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 5.7097521517e+01   0.00e+00  3.46e-02    6.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53001
+x               = 1.74869e-12    
+z               = 0.014943       
+
+Current set of parameters
+=========================
+D               = 1.74869e-12    
+f0              = 0.0101216      
+x0              = 4525.91        
+finf            = 0.0596993      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:19:23 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:20:40 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4500.00 : 32000.0]
+        #datapoints = 55001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 5.7381600231e+01   0.00e+00  3.46e-02    6.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 55001
+x               = 1.73983e-12    
+z               = 0.014943       
+
+Current set of parameters
+=========================
+D               = 1.73983e-12    
+f0              = 0.0101628      
+x0              = 4514.91        
+finf            = 0.0608951      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:20:47 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:22:03 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4500.00 : 32000.0]
+        #datapoints = 55001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 55001
+x               = 1e-12          
+z               = 0.014943       
+
+Current set of parameters
+=========================
+D               = 1e-12          
+f0              = 0.05           
+x0              = 4500           
+finf            = 0.07           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:22:05 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:22:21 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4500.00 : 32000.0]
+        #datapoints = 55001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 55001
+x               = 1e-12          
+z               = 0.014943       
+
+Current set of parameters
+=========================
+D               = 1e-12          
+f0              = 0.01           
+x0              = 4500           
+finf            = 0.07           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:22:23 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:22:38 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4500.00 : 32000.0]
+        #datapoints = 55001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.2355568093e+01   0.00e+00  2.14e-02    1.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 55001
+x               = 1.61872e-12    
+z               = 0.014943       
+
+Current set of parameters
+=========================
+D               = 1.61872e-12    
+f0              = 0.0145112      
+x0              = 5767.76        
+finf            = 0.0494853      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:22:40 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:22:58 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4500.00 : 32000.0]
+        #datapoints = 55001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.7004912670e+01   0.00e+00  3.28e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 55001
+x               = 1.62543e-12    
+z               = 0.014943       
+
+Current set of parameters
+=========================
+D               = 1.62543e-12    
+f0              = 0.0143462      
+x0              = 5826.26        
+finf            = 0.0639411      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:23:04 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:24:04 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4500.00 : 26000.0]
+        #datapoints = 43001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.5009733777e+01   0.00e+00  3.21e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 43001
+x               = -6.32372e-13   
+z               = 0.014943       
+
+Current set of parameters
+=========================
+D               = -6.32372e-13   
+f0              = 0.00958116     
+x0              = 511.834        
+finf            = 0.0532411      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:24:06 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:24:22 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4500.00 : 30000.0]
+        #datapoints = 51001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.6442008122e+01   0.00e+00  3.26e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 51001
+x               = -2.05208e-14   
+z               = 0.014943       
+
+Current set of parameters
+=========================
+D               = -2.05208e-14   
+f0              = 0.0131793      
+x0              = 1515.48        
+finf            = 0.0616705      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:24:27 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:24:54 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4500.00 : 32000.0]
+        #datapoints = 55001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 4.8427915985e+01   0.00e+00  3.51e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.500000e-02
+
+Current data point
+=========================
+#               = 1 out of 55001
+x               = -6.22872e-13   
+z               = 0.014943       
+
+Current set of parameters
+=========================
+D               = -6.22872e-13   
+f0              = 0.0100407      
+x0              = 628.652        
+finf            = 0.0557569      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:24:57 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri May 31 14:25:42 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 32000.0]
+        #datapoints = 54601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.6995735842e+01   0.00e+00  3.29e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 54601
+x               = 1.62572e-12    
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = 1.62572e-12    
+f0              = 0.0143432      
+x0              = 5836.49        
+finf            = 0.0638757      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:25:48 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:26:25 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 23000.0]
+        #datapoints = 36601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.3145124960e+01   0.00e+00  3.17e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 36601
+x               = -7.4441e-15    
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = -7.4441e-15    
+f0              = 0.00975977     
+x0              = 1048.19        
+finf            = 0.0493983      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:26:27 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri May 31 14:26:38 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 24000.0]
+        #datapoints = 38601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.3893319752e+01   0.00e+00  3.19e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 38601
+x               = -2.54925e-13   
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = -2.54925e-13   
+f0              = 0.00934339     
+x0              = 806.968        
+finf            = 0.0512399      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:26:40 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri May 31 14:26:52 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 25000.0]
+        #datapoints = 40601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.4501611983e+01   0.00e+00  3.21e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 40601
+x               = -4.79588e-13   
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = -4.79588e-13   
+f0              = 0.00895241     
+x0              = 584.429        
+finf            = 0.0528773      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:26:55 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:27:10 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 27000.0]
+        #datapoints = 44601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.5428671562e+01   0.00e+00  3.24e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 44601
+x               = -4.10113e-13   
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = -4.10113e-13   
+f0              = 0.010089       
+x0              = 849.968        
+finf            = 0.0527244      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:27:13 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri May 31 14:27:24 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 28000.0]
+        #datapoints = 46601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.5798425677e+01   0.00e+00  3.25e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 46601
+x               = -5.59691e-13   
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = -5.59691e-13   
+f0              = 0.00994502     
+x0              = 713.111        
+finf            = 0.0537006      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:27:27 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:27:42 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 29000.0]
+        #datapoints = 48601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.6127677290e+01   0.00e+00  3.26e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 48601
+x               = -1.13261e-13   
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = -1.13261e-13   
+f0              = 0.0130666      
+x0              = 1412.78        
+finf            = 0.0612601      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:27:46 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:28:03 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 30000.0]
+        #datapoints = 50601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.6432831294e+01   0.00e+00  3.27e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 50601
+x               = -2.65259e-14   
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = -2.65259e-14   
+f0              = 0.0130834      
+x0              = 1493.76        
+finf            = 0.0617237      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:28:07 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri May 31 14:28:19 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 31500.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 3.6856717313e+01   0.00e+00  3.29e-02    4.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 1.59628e-12    
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = 1.59628e-12    
+f0              = 0.0143029      
+x0              = 5736.11        
+finf            = 0.0642937      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:28:25 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:30:14 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 31500.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 4.2825808848e+00   0.00e+00  2.84e-02    2.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 178 out of 53601
+x               = 1.62646e-12    
+z               = 0.012644       
+
+Current set of parameters
+=========================
+D               = 1.62646e-12    
+f0              = 0.0143615      
+x0              = 6491.17        
+finf            = 0.0605668      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:30:17 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:30:31 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 31500.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 2.1469064761e+01   0.00e+00  3.12e-02    3.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 1.56805e-12    
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = 1.56805e-12    
+f0              = 0.0142751      
+x0              = 5433.72        
+finf            = 0.0662055      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:30:37 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:31:01 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 31500.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 6.9115516014e+01   0.00e+00  3.58e-02    8.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 1.56483e-12    
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = 1.56483e-12    
+f0              = 0.0142801      
+x0              = 5310.19        
+finf            = 0.0668517      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:31:08 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 103000.]
+        #datapoints = 139002
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 4.2646003030e+02   0.00e+00  2.98e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+
+Current data point
+=========================
+#               = 30181 out of 139002
+x               = -6.16923e-12   
+z               = 0.028737       
+
+Current set of parameters
+=========================
+Dd              = -6.16923e-12   
+xd0             = 48589.9        
+fdinf           = -0.590827      
+fd0             = 0.0209598      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:33:23 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 31500.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 6.9115516014e+01   0.00e+00  3.58e-02    8.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 1.56483e-12    
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = 1.56483e-12    
+f0              = 0.0142801      
+x0              = 5310.19        
+finf            = 0.0668517      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:33:30 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 73000.0]
+        #datapoints = 79001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.1836884149e+01   0.00e+00  3.93e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+  21 2.6895452537e-01   0.00e+00  3.93e-01    1.245445e-12   1.900976e+04   7.809336e-02   1.467798e-02
+
+Maximum iteration count (20) reached. Fit stopped.
+final sum of squares of residuals : 0.268955
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 78997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00184516
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.40462e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Dd              = 1.24544e-12      +/- 3.867e-15    (0.3105%)
+xd0             = 19009.8          +/- 349.3        (1.837%)
+fdinf           = 0.0780934        +/- 0.001747     (2.237%)
+fd0             = 0.014678         +/- 3.419e-05    (0.2329%)
+
+correlation matrix of the fit parameters:
+                Dd     xd0    fdinf  fd0    
+Dd              1.000 
+xd0             0.898  1.000 
+fdinf          -0.870 -0.998  1.000 
+fd0             0.930  0.746 -0.714  1.000 
+
+
+*******************************************************************************
+Fri May 31 14:39:39 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 31500.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 6.9115516014e+01   0.00e+00  3.58e-02    8.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 1.56483e-12    
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = 1.56483e-12    
+f0              = 0.0142801      
+x0              = 5310.19        
+finf            = 0.0668517      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:39:46 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 73000.0]
+        #datapoints = 79001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.1836884149e+01   0.00e+00  3.93e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+  21 2.6895452537e-01   0.00e+00  3.93e-01    1.245445e-12   1.900976e+04   7.809336e-02   1.467798e-02
+
+Maximum iteration count (20) reached. Fit stopped.
+final sum of squares of residuals : 0.268955
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 78997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00184516
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.40462e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Dd              = 1.24544e-12      +/- 3.867e-15    (0.3105%)
+xd0             = 19009.8          +/- 349.3        (1.837%)
+fdinf           = 0.0780934        +/- 0.001747     (2.237%)
+fd0             = 0.014678         +/- 3.419e-05    (0.2329%)
+
+correlation matrix of the fit parameters:
+                Dd     xd0    fdinf  fd0    
+Dd              1.000 
+xd0             0.898  1.000 
+fdinf          -0.870 -0.998  1.000 
+fd0             0.930  0.746 -0.714  1.000 
+
+
+*******************************************************************************
+Fri May 31 14:41:17 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [107000. : 130500.]
+        #datapoints = 47003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.5659312337e+02   0.00e+00  6.07e-02    8.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 31 14:41:21 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:42:38 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [4700.00 : 31500.0]
+        #datapoints = 53601
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 6.9115516014e+01   0.00e+00  3.58e-02    8.000000e-12   1.000000e-02   4.000000e+03   7.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 53601
+x               = 1.56483e-12    
+z               = 0.01207        
+
+Current set of parameters
+=========================
+D               = 1.56483e-12    
+f0              = 0.0142801      
+x0              = 5310.19        
+finf            = 0.0668517      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:42:45 2024
+
+
+FIT:    data read from '../data/20240525_A_01.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [33500.0 : 73000.0]
+        #datapoints = 79001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.1836884149e+01   0.00e+00  3.93e-02    6.000000e-12   3.000000e+04   7.000000e-02   1.000000e-02
+  21 2.6895452537e-01   0.00e+00  3.93e-01    1.245445e-12   1.900976e+04   7.809336e-02   1.467798e-02
+
+Maximum iteration count (20) reached. Fit stopped.
+final sum of squares of residuals : 0.268955
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 78997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00184516
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.40462e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Dd              = 1.24544e-12      +/- 3.867e-15    (0.3105%)
+xd0             = 19009.8          +/- 349.3        (1.837%)
+fdinf           = 0.0780934        +/- 0.001747     (2.237%)
+fd0             = 0.014678         +/- 3.419e-05    (0.2329%)
+
+correlation matrix of the fit parameters:
+                Dd     xd0    fdinf  fd0    
+Dd              1.000 
+xd0             0.898  1.000 
+fdinf          -0.870 -0.998  1.000 
+fd0             0.930  0.746 -0.714  1.000 
+
+
+*******************************************************************************
+Fri May 31 14:43:37 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [107000. : 130500.]
+        #datapoints = 47003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 7.2724006172e+00   0.00e+00  1.52e-01    1.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 11457 out of 47003
+x               = 2.07004e-12    
+z               = 0.038507       
+
+Current set of parameters
+=========================
+D               = 2.07004e-12    
+f0              = 0.0340677      
+x0              = 114065         
+finf            = 0.0488252      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:43:39 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:44:06 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [110000. : 130500.]
+        #datapoints = 41003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 7.2266017786e+00   0.00e+00  1.57e-01    1.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1357 out of 41003
+x               = 2.01234e-12    
+z               = 0.030461       
+
+Current set of parameters
+=========================
+D               = 2.01234e-12    
+f0              = 0.0277559      
+x0              = 112054         
+finf            = 0.0571869      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:44:08 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:46:08 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [110000. : 130500.]
+        #datapoints = 41003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.0519624576e+02   0.00e+00  5.61e-02    6.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 22189 out of 41003
+x               = 5.76768e-12    
+z               = 0.085636       
+
+Current set of parameters
+=========================
+D               = 5.76768e-12    
+f0              = 0.0187265      
+x0              = 121573         
+finf            = 0.0687625      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:46:11 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:47:03 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [107000. : 130500.]
+        #datapoints = 47003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.4742302284e+02   0.00e+00  8.45e-02    6.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 31 14:47:06 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:47:18 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [110000. : 130500.]
+        #datapoints = 41003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.0519624576e+02   0.00e+00  5.61e-02    6.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 22189 out of 41003
+x               = 5.76768e-12    
+z               = 0.085636       
+
+Current set of parameters
+=========================
+D               = 5.76768e-12    
+f0              = 0.0187265      
+x0              = 121573         
+finf            = 0.0687625      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:47:22 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:48:06 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [108000. : 133500.]
+        #datapoints = 51003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.3601281033e+02   0.00e+00  6.77e-02    6.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 4824 out of 51003
+x               = -3.19707e-12   
+z               = 0.029886       
+
+Current set of parameters
+=========================
+D               = -3.19707e-12   
+f0              = 0.0186551      
+x0              = 110411         
+finf            = 0.0666261      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:48:08 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:48:24 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [108000. : 132000.]
+        #datapoints = 48003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.3499399547e+02   0.00e+00  6.86e-02    6.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 5393 out of 48003
+x               = -2.56594e-12   
+z               = 0.03276        
+
+Current set of parameters
+=========================
+D               = -2.56594e-12   
+f0              = 0.0186011      
+x0              = 110695         
+finf            = 0.0652844      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:48:26 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:48:35 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [108000. : 132000.]
+        #datapoints = 48003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.1132835168e+02   0.00e+00  1.12e-01    4.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 48003
+x               = -1.59275e-13   
+z               = 0.026438       
+
+Current set of parameters
+=========================
+D               = -1.59275e-13   
+f0              = 0.0189318      
+x0              = 101879         
+finf            = 0.0728919      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:48:37 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:49:18 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [107000. : 131000.]
+        #datapoints = 48003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.1864309003e+02   0.00e+00  1.37e-01    4.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 4149 out of 48003
+x               = 3.87857e-12    
+z               = 0.027587       
+
+Current set of parameters
+=========================
+D               = 3.87857e-12    
+f0              = 0.0191054      
+x0              = 109787         
+finf            = 0.0780123      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:49:22 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:49:40 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.2546865719e+02   0.00e+00  1.63e-01    4.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 2153 out of 52003
+x               = 3.8812e-12     
+z               = 0.026438       
+
+Current set of parameters
+=========================
+D               = 3.8812e-12     
+f0              = 0.0191674      
+x0              = 107789         
+finf            = 0.0794627      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:49:43 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:49:55 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106700. : 132000.]
+        #datapoints = 50603
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.2136902560e+02   0.00e+00  1.43e-01    4.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 50603
+x               = -8.45715e-14   
+z               = 0.026438       
+
+Current set of parameters
+=========================
+D               = -8.45715e-14   
+f0              = 0.01889        
+x0              = 99822.5        
+finf            = 0.071126       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:49:57 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:50:12 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [107500. : 132000.]
+        #datapoints = 49003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.1552279481e+02   0.00e+00  1.23e-01    4.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 49003
+x               = -1.70514e-13   
+z               = 0.027587       
+
+Current set of parameters
+=========================
+D               = -1.70514e-13   
+f0              = 0.0189143      
+x0              = 100902         
+finf            = 0.0722224      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:50:15 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:50:30 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [107000. : 131000.]
+        #datapoints = 48003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.1864309003e+02   0.00e+00  1.37e-01    4.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 4149 out of 48003
+x               = 3.87857e-12    
+z               = 0.027587       
+
+Current set of parameters
+=========================
+D               = 3.87857e-12    
+f0              = 0.0191054      
+x0              = 109787         
+finf            = 0.0780123      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:50:33 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:51:00 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [109000. : 131000.]
+        #datapoints = 44003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.0121313039e+02   0.00e+00  9.61e-02    4.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 10112 out of 44003
+x               = 3.86835e-12    
+z               = 0.046554       
+
+Current set of parameters
+=========================
+D               = 3.86835e-12    
+f0              = 0.0190418      
+x0              = 114771         
+finf            = 0.0766346      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:51:03 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:51:15 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [110000. : 131000.]
+        #datapoints = 42003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.0914736810e+01   0.00e+00  8.26e-02    4.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 14025 out of 42003
+x               = 3.86226e-12    
+z               = 0.064945       
+
+Current set of parameters
+=========================
+D               = 3.86226e-12    
+f0              = 0.0190406      
+x0              = 117728         
+finf            = 0.0767243      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:51:18 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:51:26 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [110000. : 131000.]
+        #datapoints = 42003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 2.9403149199e+01   0.00e+00  1.59e-01    2.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 21060 out of 42003
+x               = 2.57753e-12    
+z               = 0.080463       
+
+Current set of parameters
+=========================
+D               = 2.57753e-12    
+f0              = 0.0406444      
+x0              = 121603         
+finf            = 0.00562394     
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:51:28 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:51:40 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [110000. : 131000.]
+        #datapoints = 42003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.0554411336e+02   0.00e+00  5.60e-02    6.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 22465 out of 42003
+x               = 5.76424e-12    
+z               = 0.085061       
+
+Current set of parameters
+=========================
+D               = 5.76424e-12    
+f0              = 0.0187414      
+x0              = 121712         
+finf            = 0.0691401      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:51:44 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:51:58 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [108000. : 131000.]
+        #datapoints = 46003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.3432199121e+02   0.00e+00  6.93e-02    6.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 5749 out of 46003
+x               = -2.10725e-12   
+z               = 0.032185       
+
+Current set of parameters
+=========================
+D               = -2.10725e-12   
+f0              = 0.0185596      
+x0              = 110874         
+finf            = 0.0642532      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:52:01 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:52:27 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 131000.]
+        #datapoints = 50003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.7216756354e+02   0.00e+00  7.32e-02    8.000000e-12   2.000000e-02   1.000000e+05   1.000000e-01
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 31 14:52:31 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:52:49 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 131000.]
+        #datapoints = 50003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.7676977192e+02   0.00e+00  5.82e-02    1.000000e-11   2.000000e-02   1.000000e+05   1.000000e-01
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 31 14:52:53 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:53:21 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 131000.]
+        #datapoints = 50003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.3341184738e+02   0.00e+00  4.98e-01    1.000000e-11   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 712 out of 50003
+x               = 6.11902e-12    
+z               = 0.023564       
+
+Current set of parameters
+=========================
+D               = 6.11902e-12    
+f0              = 0.0189061      
+x0              = 106807         
+finf            = 0.0590869      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:53:25 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:53:43 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 131000.]
+        #datapoints = 50003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.5363858198e+01   0.00e+00  3.97e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 50003
+x               = 2.39781e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.39781e-12    
+f0              = 0.0201736      
+x0              = 106089         
+finf            = 0.072426       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:53:47 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:54:08 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:54:12 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 167000.]
+        #datapoints = 68003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1532 out of 68003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:54:50 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:54:55 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133500. : 160000.]
+        #datapoints = 53003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 532 out of 53003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:55:08 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:55:13 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133500. : 160000.]
+        #datapoints = 53003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 649 out of 53003
+x               = 8e-12          
+z               = 0.09713        
+
+Current set of parameters
+=========================
+Dd              = 8e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:55:28 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:55:33 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133500. : 160000.]
+        #datapoints = 53003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 720 out of 53003
+x               = 1e-11          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 1e-11          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:56:05 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:56:10 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133500. : 155000.]
+        #datapoints = 43003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 532 out of 43003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:56:30 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:56:35 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133500. : 145000.]
+        #datapoints = 23003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 532 out of 23003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:56:44 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:56:49 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133500. : 145000.]
+        #datapoints = 23003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 23003
+x               = 1e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 1e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:57:42 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:57:47 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [134000. : 145000.]
+        #datapoints = 22003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 22003
+x               = 1e-12          
+z               = 0.097705       
+
+Current set of parameters
+=========================
+Dd              = 1e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:58:11 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:58:16 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [132000. : 145000.]
+        #datapoints = 26003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1176 out of 26003
+x               = 1e-12          
+z               = 0.102878       
+
+Current set of parameters
+=========================
+Dd              = 1e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:58:29 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:58:34 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [132500. : 145000.]
+        #datapoints = 25003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 176 out of 25003
+x               = 1e-12          
+z               = 0.102878       
+
+Current set of parameters
+=========================
+Dd              = 1e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:58:52 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:58:57 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [132500. : 170000.]
+        #datapoints = 75003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 176 out of 75003
+x               = 1e-12          
+z               = 0.102878       
+
+Current set of parameters
+=========================
+Dd              = 1e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 14:59:10 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:59:15 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [132500. : 170000.]
+        #datapoints = 75003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 2649 out of 75003
+x               = 8e-12          
+z               = 0.09713        
+
+Current set of parameters
+=========================
+Dd              = 8e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:59:45 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 14:59:50 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [131500. : 160000.]
+        #datapoints = 57003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 4532 out of 57003
+x               = 6e-12          
+z               = 0.09828        
+
+Current set of parameters
+=========================
+Dd              = 6e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 15:00:05 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:00:10 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [131500. : 160000.]
+        #datapoints = 57003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 4688 out of 57003
+x               = 9e-12          
+z               = 0.096556       
+
+Current set of parameters
+=========================
+Dd              = 9e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 15:00:22 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:00:27 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [131500. : 160000.]
+        #datapoints = 57003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 4296 out of 57003
+x               = 4e-12          
+z               = 0.095981       
+
+Current set of parameters
+=========================
+Dd              = 4e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 15:00:58 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:01:03 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [134000. : 145000.]
+        #datapoints = 22003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 22003
+x               = 2e-12          
+z               = 0.097705       
+
+Current set of parameters
+=========================
+Dd              = 2e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:01:16 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:01:21 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [134000. : 160000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2e-12          
+z               = 0.097705       
+
+Current set of parameters
+=========================
+Dd              = 2e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:01:47 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132800.]
+        #datapoints = 53603
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6561362166e+01   0.00e+00  3.84e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 53603
+x               = 1.87593e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 1.87593e-12    
+f0              = 0.0260697      
+x0              = 106078         
+finf            = 0.0854259      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:01:52 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [134000. : 160000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2e-12          
+z               = 0.097705       
+
+Current set of parameters
+=========================
+Dd              = 2e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:02:29 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132800.]
+        #datapoints = 53603
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6561362166e+01   0.00e+00  3.84e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 53603
+x               = 1.87593e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 1.87593e-12    
+f0              = 0.0260697      
+x0              = 106078         
+finf            = 0.0854259      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:02:33 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [134000. : 150000.]
+        #datapoints = 32003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 32003
+x               = 2e-12          
+z               = 0.097705       
+
+Current set of parameters
+=========================
+Dd              = 2e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:02:51 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 131000.]
+        #datapoints = 50003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.5363858198e+01   0.00e+00  3.97e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 50003
+x               = 2.39781e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.39781e-12    
+f0              = 0.0201736      
+x0              = 106089         
+finf            = 0.072426       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:02:55 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [134000. : 150000.]
+        #datapoints = 32003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 32003
+x               = 2e-12          
+z               = 0.097705       
+
+Current set of parameters
+=========================
+Dd              = 2e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:03:20 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:03:25 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [134000. : 145000.]
+        #datapoints = 22003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 22003
+x               = 2e-12          
+z               = 0.097705       
+
+Current set of parameters
+=========================
+Dd              = 2e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:03:46 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:03:50 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [131000. : 145000.]
+        #datapoints = 28003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 4589 out of 28003
+x               = 2e-12          
+z               = 0.099429       
+
+Current set of parameters
+=========================
+Dd              = 2e-12          
+xd0             = 134000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 15:04:08 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:04:13 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [131000. : 145000.]
+        #datapoints = 28003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 589 out of 28003
+x               = 2e-12          
+z               = 0.101728       
+
+Current set of parameters
+=========================
+Dd              = 2e-12          
+xd0             = 132000         
+fdinf           = 0.1            
+fd0             = 0.02           
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 15:04:54 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:04:59 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133000. : 145000.]
+        #datapoints = 24003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 2.9985897915e+01   0.00e+00  3.62e-01    2.000000e-12   1.328000e+05   1.000000e-01   2.000000e-02
+
+Current data point
+=========================
+#               = 13733 out of 24003
+x               = 3.29845e-12    
+z               = 0.055749       
+
+Current set of parameters
+=========================
+Dd              = 3.29845e-12    
+xd0             = 140294         
+fdinf           = 0.0362713      
+fd0             = 0.0452948      
+
+BREAK: Function evaluation yields NaN ("not a number")
+
+*******************************************************************************
+Fri May 31 15:05:34 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:05:39 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133500. : 150000.]
+        #datapoints = 33003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.2136281116e+01   0.00e+00  3.44e-01    2.000000e-12   1.328000e+05   1.000000e-01   2.000000e-02
+   7 7.1137756365e-02  -4.37e-01  3.44e-02    2.337404e-12   1.249183e+05   1.283940e-01   2.744612e-02
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.0711378
+rel. change during last iteration : -0.000437162
+
+degrees of freedom    (FIT_NDF)                        : 32999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00146825
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.15575e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Dd              = 2.3374e-12       +/- 8.402e-15    (0.3595%)
+xd0             = 124918           +/- 237.8        (0.1903%)
+fdinf           = 0.128394         +/- 0.003784     (2.947%)
+fd0             = 0.0274461        +/- 7.148e-05    (0.2604%)
+
+correlation matrix of the fit parameters:
+                Dd     xd0    fdinf  fd0    
+Dd              1.000 
+xd0             0.919  1.000 
+fdinf          -0.899 -0.999  1.000 
+fd0             0.963  0.816 -0.792  1.000 
+
+
+*******************************************************************************
+Fri May 31 15:23:27 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [170000. : 193000.]
+        #datapoints = 46003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.9519091685e+02   0.00e+00  5.10e-02    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+   3 3.0255459837e+01  -8.98e-01  5.10e-03   -1.993247e-10   3.140391e-02   4.152301e+06   4.482234e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 30.2555
+rel. change during last iteration : -0.000898254
+
+degrees of freedom    (FIT_NDF)                        : 45999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0256465
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000657742
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+D               = -1.99325e-10     +/- 3.512        (1.762e+12%)
+f0              = 0.0314039        +/- 3016         (9.604e+06%)
+x0              = 4.1523e+06       +/- 1.493e+14    (3.596e+09%)
+finf            = 0.448223         +/- 3.946e+09    (8.803e+11%)
+
+correlation matrix of the fit parameters:
+                D      f0     x0     finf   
+D               1.000 
+f0              0.999  1.000 
+x0             -1.000 -0.999  1.000 
+finf           -1.000 -0.999  1.000  1.000 
+
+
+*******************************************************************************
+Fri May 31 15:23:31 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [196000. : 222000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.9513841420e+01   0.00e+00  1.00e-02    2.000000e-12   1.328000e+05   1.000000e-01   2.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.34811e-12    
+z               = 0.090234       
+
+Current set of parameters
+=========================
+Dd              = 2.34811e-12    
+xd0             = 196153         
+fdinf           = 0.106276       
+fd0             = 0.0215419      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:24:27 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [170500. : 192000.]
+        #datapoints = 43003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.8400359690e+02   0.00e+00  5.10e-02    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+   3 2.6292773059e+01  -8.93e-01  5.10e-03   -1.892519e-10   3.108930e-02   3.956250e+06   4.204098e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 26.2928
+rel. change during last iteration : -0.000893307
+
+degrees of freedom    (FIT_NDF)                        : 42999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.024728
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000611474
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+D               = -1.89252e-10     +/- 3.348        (1.769e+12%)
+f0              = 0.0310893        +/- 3537         (1.138e+07%)
+x0              = 3.95625e+06      +/- 1.58e+14     (3.993e+09%)
+finf            = 0.42041          +/- 3.716e+09    (8.838e+11%)
+
+correlation matrix of the fit parameters:
+                D      f0     x0     finf   
+D               1.000 
+f0              0.999  1.000 
+x0             -1.000 -0.999  1.000 
+finf           -1.000 -0.999  1.000  1.000 
+
+
+*******************************************************************************
+Fri May 31 15:24:31 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [196000. : 222000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.9513841420e+01   0.00e+00  1.00e-02    2.000000e-12   1.328000e+05   1.000000e-01   2.000000e-02
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.34811e-12    
+z               = 0.090234       
+
+Current set of parameters
+=========================
+Dd              = 2.34811e-12    
+xd0             = 196153         
+fdinf           = 0.106276       
+fd0             = 0.0215419      
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:25:08 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [170500. : 192000.]
+        #datapoints = 43003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 1.8020622514e+02   0.00e+00  5.97e-02    6.000000e-12   2.000000e-02   1.600000e+05   1.000000e-01
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Fri May 31 15:25:12 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [196000. : 222000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.1972891246e+01   0.00e+00  4.13e-01    2.000000e-12   1.940000e+05   1.000000e-01   2.000000e-02
+  16 7.6684304563e-02  -9.32e-01  4.13e-02    2.006932e-12   1.847998e+05   1.365377e-01   2.111801e-02
+
+After 16 iterations the fit converged.
+final sum of squares of residuals : 0.0766843
+rel. change during last iteration : -0.000931992
+
+degrees of freedom    (FIT_NDF)                        : 51999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00121438
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.47473e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Dd              = 2.00693e-12      +/- 3.637e-15    (0.1812%)
+xd0             = 184800           +/- 271.9        (0.1471%)
+fdinf           = 0.136538         +/- 0.004224     (3.093%)
+fd0             = 0.021118         +/- 2.49e-05     (0.1179%)
+
+correlation matrix of the fit parameters:
+                Dd     xd0    fdinf  fd0    
+Dd              1.000 
+xd0             0.884  1.000 
+fdinf          -0.866 -0.999  1.000 
+fd0             0.921  0.716 -0.695  1.000 
+
+
+*******************************************************************************
+Fri May 31 15:26:10 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [170500. : 192000.]
+        #datapoints = 43003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 8.0612794854e+01   0.00e+00  2.33e-01    2.000000e-12   2.000000e-02   1.600000e+05   1.000000e-01
+   5 6.9222928644e-02  -1.58e-01  2.33e-05    1.487556e-12   2.192467e-02   1.679349e+05   9.442127e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.0692229
+rel. change during last iteration : -0.000157813
+
+degrees of freedom    (FIT_NDF)                        : 42999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00126881
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.60987e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+D               = 1.48756e-12      +/- 2.484e-15    (0.167%)
+f0              = 0.0219247        +/- 2.248e-05    (0.1026%)
+x0              = 167935           +/- 15.42        (0.009181%)
+finf            = 0.0944213        +/- 9.471e-05    (0.1003%)
+
+correlation matrix of the fit parameters:
+                D      f0     x0     finf   
+D               1.000 
+f0              0.523  1.000 
+x0              0.957  0.702  1.000 
+finf           -0.969 -0.615 -0.930  1.000 
+
+
+*******************************************************************************
+Fri May 31 15:26:15 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [196000. : 222000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.1972891246e+01   0.00e+00  4.13e-01    2.000000e-12   1.940000e+05   1.000000e-01   2.000000e-02
+  16 7.6684304563e-02  -9.32e-01  4.13e-02    2.006932e-12   1.847998e+05   1.365377e-01   2.111801e-02
+
+After 16 iterations the fit converged.
+final sum of squares of residuals : 0.0766843
+rel. change during last iteration : -0.000931992
+
+degrees of freedom    (FIT_NDF)                        : 51999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00121438
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.47473e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Dd              = 2.00693e-12      +/- 3.637e-15    (0.1812%)
+xd0             = 184800           +/- 271.9        (0.1471%)
+fdinf           = 0.136538         +/- 0.004224     (3.093%)
+fd0             = 0.021118         +/- 2.49e-05     (0.1179%)
+
+correlation matrix of the fit parameters:
+                Dd     xd0    fdinf  fd0    
+Dd              1.000 
+xd0             0.884  1.000 
+fdinf          -0.866 -0.999  1.000 
+fd0             0.921  0.716 -0.695  1.000 
+
+
+*******************************************************************************
+Fri May 31 15:27:28 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [106000. : 132000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 9.6035180115e+01   0.00e+00  3.89e-01    6.000000e-12   2.000000e-02   1.050000e+05   1.000000e-01
+
+Current data point
+=========================
+#               = 1 out of 52003
+x               = 2.03883e-12    
+z               = 0.025863       
+
+Current set of parameters
+=========================
+D               = 2.03883e-12    
+f0              = 0.0266199      
+x0              = 106833         
+finf            = 0.083019       
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Fri May 31 15:27:33 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [133500. : 150000.]
+        #datapoints = 33003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.2136281116e+01   0.00e+00  3.44e-01    2.000000e-12   1.328000e+05   1.000000e-01   2.000000e-02
+   7 7.1137756365e-02  -4.37e-01  3.44e-02    2.337404e-12   1.249183e+05   1.283940e-01   2.744612e-02
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 0.0711378
+rel. change during last iteration : -0.000437162
+
+degrees of freedom    (FIT_NDF)                        : 32999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00146825
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.15575e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Dd              = 2.3374e-12       +/- 8.402e-15    (0.3595%)
+xd0             = 124918           +/- 237.8        (0.1903%)
+fdinf           = 0.128394         +/- 0.003784     (2.947%)
+fd0             = 0.0274461        +/- 7.148e-05    (0.2604%)
+
+correlation matrix of the fit parameters:
+                Dd     xd0    fdinf  fd0    
+Dd              1.000 
+xd0             0.919  1.000 
+fdinf          -0.899 -0.999  1.000 
+fd0             0.963  0.816 -0.792  1.000 
+
+
+*******************************************************************************
+Fri May 31 15:27:40 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [170500. : 192000.]
+        #datapoints = 43003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=2/sqrt(pi*t(x))*(exp(-1/(4*t(x))) + exp(-9/(4*t(x))) + exp(-25/(4*t(x))) + exp(-49/(4*t(x))))*finf + f0
+	t(x)=D*(x-x0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   D             f0            x0            finf         
+   0 8.0612794854e+01   0.00e+00  2.33e-01    2.000000e-12   2.000000e-02   1.600000e+05   1.000000e-01
+   5 6.9222928644e-02  -1.58e-01  2.33e-05    1.487556e-12   2.192467e-02   1.679349e+05   9.442127e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.0692229
+rel. change during last iteration : -0.000157813
+
+degrees of freedom    (FIT_NDF)                        : 42999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00126881
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.60987e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+D               = 1.48756e-12      +/- 2.484e-15    (0.167%)
+f0              = 0.0219247        +/- 2.248e-05    (0.1026%)
+x0              = 167935           +/- 15.42        (0.009181%)
+finf            = 0.0944213        +/- 9.471e-05    (0.1003%)
+
+correlation matrix of the fit parameters:
+                D      f0     x0     finf   
+D               1.000 
+f0              0.523  1.000 
+x0              0.957  0.702  1.000 
+finf           -0.969 -0.615 -0.930  1.000 
+
+
+*******************************************************************************
+Fri May 31 15:27:45 2024
+
+
+FIT:    data read from '../data/20240528_A_02.ASC' us ($1):($4)
+        format = x:z
+        x range restricted to [196000. : 222000.]
+        #datapoints = 52003
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x)=fdinf-2/sqrt(pi*td(x))*(exp(-1/(4*td(x))) + exp(-9/(4*td(x))) + exp(-25/(4*td(x))))*fdinf + fd0
+	td(x)=Dd*(x-xd0)/L**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Dd            xd0           fdinf         fd0          
+   0 3.1972891246e+01   0.00e+00  4.13e-01    2.000000e-12   1.940000e+05   1.000000e-01   2.000000e-02
+  16 7.6684304563e-02  -9.32e-01  4.13e-02    2.006932e-12   1.847998e+05   1.365377e-01   2.111801e-02
+
+After 16 iterations the fit converged.
+final sum of squares of residuals : 0.0766843
+rel. change during last iteration : -0.000931992
+
+degrees of freedom    (FIT_NDF)                        : 51999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00121438
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.47473e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Dd              = 2.00693e-12      +/- 3.637e-15    (0.1812%)
+xd0             = 184800           +/- 271.9        (0.1471%)
+fdinf           = 0.136538         +/- 0.004224     (3.093%)
+fd0             = 0.021118         +/- 2.49e-05     (0.1179%)
+
+correlation matrix of the fit parameters:
+                Dd     xd0    fdinf  fd0    
+Dd              1.000 
+xd0             0.884  1.000 
+fdinf          -0.866 -0.999  1.000 
+fd0             0.921  0.716 -0.695  1.000 
