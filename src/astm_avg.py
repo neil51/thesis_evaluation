@@ -25,7 +25,7 @@ def calculate_average_third_column(csv_files):
     return total_sum / count
 
 def main():
-    directory = 'astm_output/8_astm'  # Change this to the path where your CSV files are located
+    directory = 'astm_output/11_astm'  # Change this to the path where your CSV files are located
     csv_files = read_csv_files(directory)
     
     if not csv_files:

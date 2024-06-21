@@ -246,7 +246,7 @@ void perform_curve_fit(const FitParameters& params) {
 }
 
 int main() {
-    std::vector<FitParameters> parameter_sets = parse_csv("astm_input/20240521_astm_input.csv");
+    std::vector<FitParameters> parameter_sets = parse_csv("astm_input/20240612_astm_input.csv");
  
      for (const auto& params : parameter_sets) {
         perform_curve_fit(params);
